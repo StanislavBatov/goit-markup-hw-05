@@ -112,7 +112,7 @@ img {
 
 .menu-link:hover,
 .menu-link:focus {
-color: var(--ocean-color);
+  color: var(--ocean-color);
 }
 
 .active {
@@ -140,7 +140,7 @@ color: var(--ocean-color);
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-style: normal;
-  color: var(--navy-blue-color);
+  color: var(--slate-color);
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: var(--transition-type);
@@ -197,8 +197,9 @@ color: var(--ocean-color);
   transition-timing-function: var(--transition-type);
 }
 
-.hero-btn:hover {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--ocean-color);
 }
 
 
@@ -392,7 +393,7 @@ color: var(--ocean-color);
   fill: var(--light-slate-color);
   border: 1px solid var(--light-slate-color);
   border-radius: 4px;
-  transition-property: border-color;
+  transition-property: border-color, fill;
   transition-duration: 250ms;
   transition-timing-function: var(--transition-type);
 }
@@ -636,6 +637,7 @@ span.white {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: var(--transition-type);
 }
@@ -643,7 +645,6 @@ span.white {
 .close-button:hover,
 .close-button:focus {
   background-color: var(--ocean-color);
-  border: none;
 }
 
 .close-button-icon {
